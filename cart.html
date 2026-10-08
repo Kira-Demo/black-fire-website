@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart & Checkout | Black Fire</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Black Fire</a>
+        <a href="cart.html" class="cart-icon">🛒 <span class="cart-count">0</span></a>
+    </header>
+
+    <div class="container cart-layout">
+        <div>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <h3 style="margin-top: 1rem;">Total: ₹<span id="cart-total">0</span></h3>
+        </div>
+        
+        <div class="checkout-box">
+            <h2>Checkout Details</h2>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number (WhatsApp)</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label>Full Delivery Address</label>
+                    <textarea id="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <select id="payment">
+                        <option value="Cash on Delivery">Cash on Delivery (COD)</option>
+                        <option value="UPI">UPI / Online Payment</option>
+                    </select>
+                </div>
+                
+                <div class="upi-section">
+                    <p style="font-size: 0.9rem; color: var(--text-muted);">Paying via UPI? Scan the QR code below before submitting your order.</p>
+                    <img src="https://placehold.co/150x150/1a1a1a/ff4500?text=UPI+QR" alt="UPI QR Code Placeholder">
+                    <p style="font-weight: bold; margin-top: 5px;">UPI ID: blackfire@upi</p>
+                </div>
+
+                <button type="submit" class="btn btn-large" style="margin-top: 1rem;">Place Order via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
