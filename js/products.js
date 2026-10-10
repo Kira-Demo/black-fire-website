@@ -1,32 +1,34 @@
-// js/products.js
-// js/products.js
-const products = [
-    { 
-        id: 1, 
-        name: "Inferno Oversized Tee", 
-        price: 799, 
-        image: "images/inferno-tee.jpg", 
-        description: "Premium cotton oversized streetwear tee with bold front graphic." 
+window.BLACK_FIRE_PRODUCTS = [
+    {
+      id: "inferno-tee",
+      name: "Inferno Graphic Tee",
+      subtitle: "Black • Graphic T-shirt",
+      image: "images/Inferno-tee.jpg",
+      price: 500,
+      tag: "BESTSELLER"
     },
-    { 
-        id: 2, 
-        name: "Ember Cargo Pants", 
-        price: 999, 
-        image: "images/ember-cargos.jpg", 
-        description: "Dark tactical cargos with adjustable straps and multiple pockets." 
+    {
+      id: "blaze-hoodie",
+      name: "Blaze Oversized Hoodie",
+      subtitle: "Black • Printed hoodie",
+      image: "images/blaze-hoodie.jpg",
+      price: 500,
+      tag: "NEW DROP"
     },
-    { 
-        id: 3, 
-        name: "Blaze Hoodie", 
-        price: 999, 
-        image: "images/blaze-hoodie.jpg", 
-        description: "Cozy, heavy-blend hoodie featuring our signature fire logo." 
+    {
+      id: "ash-joggers",
+      name: "Ash Relaxed Joggers",
+      subtitle: "Grey • Relaxed fit",
+      image: "images/ash-joggers.jpg",
+      price: 500,
+      tag: "EVERYDAY FIT"
     },
-    { 
-        id: 4, 
-        name: "Ash Street Joggers", 
-        price: 849, 
-        image: "images/ash-joggers.jpg", 
-        description: "Comfortable and stylish joggers for everyday wear." 
+    {
+      id: "ember-cargos",
+      name: "Ember Utility Cargos",
+      subtitle: "Olive • Cargo trousers",
+      image: "images/ember-cargos.jpg",
+      price: 500,
+      tag: "TRENDING"
     }
-];
+  ];

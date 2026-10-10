@@ -1,30 +1,102 @@
-<!-- Add this right below the </section> of your Hero -->
-<section class="slider-section">
-    <h2 class="section-title">Trending Fits</h2>
-    <div class="slider-container">
-        <div class="slider-item">
-            <a href="product.html?id=1">
-                <img src="images/inferno-tee.jpg" alt="Inferno Tee">
-                <div class="slider-price">Inferno Tee - ₹799</div>
-            </a>
-        </div>
-        <div class="slider-item">
-            <a href="product.html?id=2">
-                <img src="images/ember-cargos.jpg" alt="Ember Cargos">
-                <div class="slider-price">Ember Cargos - ₹999</div>
-            </a>
-        </div>
-        <div class="slider-item">
-            <a href="product.html?id=3">
-                <img src="images/blaze-hoodie.jpg" alt="Blaze Hoodie">
-                <div class="slider-price">Blaze Hoodie - ₹999</div>
-            </a>
-        </div>
-        <div class="slider-item">
-            <a href="product.html?id=4">
-                <img src="images/ash-joggers.jpg" alt="Ash Joggers">
-                <div class="slider-price">Ash Joggers - ₹849</div>
-            </a>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Black Fire streetwear — bold everyday fits for ₹500 each.">
+  <title>BLACK FIRE — Streetwear</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="announcement">🔥 BLACK FIRE DROP — EVERY STYLE JUST ₹500</div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Black Fire home"><span class="brand-mark">B</span> BLACK<span>FIRE</span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#new-arrivals">NEW ARRIVALS</a>
+      <a href="#new-arrivals">SHOP ALL</a>
+      <a href="about.html">ABOUT</a>
+    </nav>
+    <div class="header-actions">
+      <a class="cart-link" href="cart.html" aria-label="Shopping cart">BAG <span id="cart-count">0</span></a>
     </div>
-</section>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Featured collection">
+      <div class="hero-track" id="hero-track">
+        <article class="hero-slide is-active">
+          <img src="images/Inferno-tee.jpg" alt="Inferno graphic black T-shirt">
+          <div class="hero-shade"></div>
+          <div class="hero-copy">
+            <p class="eyebrow">THE STREETWEAR EDIT</p>
+            <h1>MAKE<br>YOUR<br><em>OWN HEAT.</em></h1>
+            <p>Bold graphics. Everyday comfort. No ordinary fits.</p>
+            <a class="button button-light" href="#new-arrivals">SHOP THE DROP <span>↗</span></a>
+          </div>
+          <div class="hero-price">₹500 <small>PER STYLE</small></div>
+        </article>
+        <article class="hero-slide">
+          <img src="images/blaze-hoodie.jpg" alt="Black graphic hoodie">
+          <div class="hero-shade"></div>
+          <div class="hero-copy">
+            <p class="eyebrow">LAYER UP</p>
+            <h2>BUILT FOR<br><em>AFTER DARK.</em></h2>
+            <p>Statement layers. Relaxed silhouettes.</p>
+            <a class="button button-light" href="#new-arrivals">EXPLORE HOODIES <span>↗</span></a>
+          </div>
+          <div class="hero-price">₹500 <small>PER STYLE</small></div>
+        </article>
+        <article class="hero-slide">
+          <img src="images/ember-cargos.jpg" alt="Olive cargo trousers">
+          <div class="hero-shade"></div>
+          <div class="hero-copy">
+            <p class="eyebrow">UTILITY, REWORKED</p>
+            <h2>MOVE<br>YOUR <em>WAY.</em></h2>
+            <p>Easy fits for wherever the day takes you.</p>
+            <a class="button button-light" href="#new-arrivals">SHOP BOTTOMS <span>↗</span></a>
+          </div>
+          <div class="hero-price">₹500 <small>PER STYLE</small></div>
+        </article>
+      </div>
+      <button class="slider-arrow slider-prev" id="slide-prev" aria-label="Previous slide">←</button>
+      <button class="slider-arrow slider-next" id="slide-next" aria-label="Next slide">→</button>
+      <div class="slider-bottom">
+        <div class="slider-dots" id="slider-dots" aria-label="Choose slide"></div>
+        <span class="slide-counter" id="slide-counter">01 / 03</span>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Store highlights">
+      <span>NO BASIC ENERGY</span><b>✳</b><span>EVERYDAY STREETWEAR</span><b>✳</b><span>ALL STYLES ₹500</span><b>✳</b><span>OWN YOUR LOOK</span>
+    </section>
+
+    <section class="products-section" id="new-arrivals">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow dark-eyebrow">FRESH FROM THE FIRE</p>
+          <h2>THE NEW <em>DROP.</em></h2>
+        </div>
+        <p class="section-note">Your next favourite fit is right here.<br>Simple price. Strong style.</p>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="promo-strip">
+      <div>
+        <p class="eyebrow">LESS SCROLL. MORE STYLE.</p>
+        <h2>GOOD FITS.<br><em>STRAIGHT-UP ₹500.</em></h2>
+      </div>
+      <a class="button button-dark" href="#new-arrivals">SHOP THE COLLECTION <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand brand-footer" href="index.html"><span class="brand-mark">B</span> BLACK<span>FIRE</span></a>
+    <p>Wear what sets you apart.</p>
+    <span>© <span id="year"></span> Black Fire. All rights reserved.</span>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
