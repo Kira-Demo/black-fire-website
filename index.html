@@ -1,41 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Fire | Streetwear for the Bold</title>
-    <meta name="description" content="Shop the latest trendy, affordable streetwear at Black Fire. Premium aesthetic, everyday prices.">
-    <meta property="og:title" content="Black Fire Streetwear">
-    <meta property="og:description" content="Bold streetwear under ₹1,000.">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <button class="hamburger" id="hamburger">☰</button>
-        <a href="index.html" class="logo">Black Fire</a>
-        <nav class="nav-links" id="nav-links">
-            <a href="index.html">Home</a>
-            <a href="shop.html">Shop All</a>
-            <a href="about.html">About Us</a>
-        </nav>
-        <a href="cart.html" class="cart-icon">🛒 <span class="cart-count">0</span></a>
-    </header>
-
-    <section class="hero">
-        <h1>Streetwear for the Bold</h1>
-        <p>Premium trendy fits under ₹1,000.</p>
-        <a href="shop.html" class="btn">Shop The Drop</a>
-    </section>
-
-    <div class="container">
-        <h2>Fresh Drops</h2>
-        <div class="grid" id="shop-grid">
-            <!-- Products injected by JS -->
+<!-- Add this right below the </section> of your Hero -->
+<section class="slider-section">
+    <h2 class="section-title">Trending Fits</h2>
+    <div class="slider-container">
+        <div class="slider-item">
+            <a href="product.html?id=1">
+                <img src="images/inferno-tee.jpg" alt="Inferno Tee">
+                <div class="slider-price">Inferno Tee - ₹799</div>
+            </a>
+        </div>
+        <div class="slider-item">
+            <a href="product.html?id=2">
+                <img src="images/ember-cargos.jpg" alt="Ember Cargos">
+                <div class="slider-price">Ember Cargos - ₹999</div>
+            </a>
+        </div>
+        <div class="slider-item">
+            <a href="product.html?id=3">
+                <img src="images/blaze-hoodie.jpg" alt="Blaze Hoodie">
+                <div class="slider-price">Blaze Hoodie - ₹999</div>
+            </a>
+        </div>
+        <div class="slider-item">
+            <a href="product.html?id=4">
+                <img src="images/ash-joggers.jpg" alt="Ash Joggers">
+                <div class="slider-price">Ash Joggers - ₹849</div>
+            </a>
         </div>
     </div>
-
-    <a href="https://wa.me/919876543210" class="wa-float" target="_blank">💬</a>
-    <script src="js/products.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
+</section>
