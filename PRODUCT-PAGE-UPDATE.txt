@@ -1,0 +1,11 @@
+BLACK FIRE website update notes
+
+Current updates:
+- Product cards have no VIEW PRODUCT overlay and no VIEW DETAILS label; image/name remain clickable.
+- Product image panels use a clean white background and contain-fit images.
+- Header action tray uses white outline heart, shopping bag, and account icons on a black background.
+- Product wishlist hearts fill Instagram-style red when saved; saved state persists in localStorage.
+- Replaced images/ash-joggers.jpg with images/joggers.jpg using the supplied joggers photo.
+- Men/Women size guide and Inches/Cms switch are retained.
+
+Note: login, real payment processing, courier serviceability and order submission are not connected in this static demo. Confirm all garment measurements and image rights before publishing.

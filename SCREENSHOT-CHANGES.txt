@@ -1,0 +1,17 @@
+BLACK FIRE — screenshot design update
+
+Included:
+- White background with black text and orange accents.
+- Product pricing: ₹800 crossed out, ₹500 current price, 38% OFF.
+- Offer labels: “Get it for as low as ₹350” and “Buy 3 get 10% off”.
+- Product detail size measurements update inline when a size is selected.
+- The L measurement row matches the screenshot: Chest 46, Front Length 30.5, Sleeve Length 10.25 inches.
+- Removed the square glyph beside ADD TO BAG.
+- About page text and image are aligned side-by-side.
+- Checkout city/state fields use dropdowns.
+- UPI QR instructions are shorter; COD and UPI QR remain the only payment methods.
+
+Notes:
+- This is a front-end demo. UPI payments are not verified and orders are not sent to a real backend.
+- The city dropdown contains common cities plus Other, not every city in India.
+- To publish, commit the project to GitHub and import the repository into Vercel.

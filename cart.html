@@ -8,16 +8,27 @@
 <body>
   <div class="announcement">🔥 BLACK FIRE DROP — EVERY STYLE JUST ₹500</div>
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">B</span> BLACK<span>FIRE</span></a>
-    <nav class="main-nav"><a href="index.html#new-arrivals">CONTINUE SHOPPING</a><a href="about.html">ABOUT</a></nav>
-    <a class="cart-link" href="cart.html">BAG <span id="cart-count">0</span></a>
+    <a class="brand" href="index.html" aria-label="BLACK FIRE home"><span class="brand-mark">B</span> BLACK<span>FIRE</span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="index.html#new-arrivals">CONTINUE SHOPPING</a><a href="about.html">ABOUT</a></nav>
+    <div class="header-actions" aria-label="Account and shopping actions">
+      <a class="header-icon-button" id="wishlist-button" href="wishlist.html" aria-label="Wishlist" title="Wishlist">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.8a5.4 5.4 0 0 0-7.6 0L12 6l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6L12 21l8.8-8.6a5.4 5.4 0 0 0 0-7.6Z"/></svg>
+      </a>
+      <a class="header-icon-button header-cart-button" href="cart.html" aria-label="Shopping bag" title="Shopping bag">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 12.1a2 2 0 0 0 2 1.7h9.7a2 2 0 0 0 2-1.6L22 8H6"/><path d="M9 21h.01M18 21h.01"/></svg>
+        <span class="header-count" id="cart-count">0</span>
+      </a>
+      <a class="header-icon-button" id="login-link" href="checkout.html" aria-label="Account / Checkout" title="Account / Checkout">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7.5" r="3.5"/><path d="M4.5 21v-2.2a6 6 0 0 1 6-6h3a6 6 0 0 1 6 6V21Z"/></svg>
+      </a>
+    </div>
   </header>
   <main class="cart-page">
     <div class="section-heading"><div><p class="eyebrow dark-eyebrow">YOUR PICKS</p><h2>YOUR <em>BAG.</em></h2></div></div>
     <div id="cart-items"></div>
     <div id="cart-summary" class="cart-summary"></div>
-    <p class="cart-note">Demo checkout: payment and order submission are not connected yet.</p>
-    <a class="button button-dark" href="index.html#new-arrivals">CONTINUE SHOPPING <span>↗</span></a>
+    <p class="cart-note">Choose Cash on Delivery or UPI QR at checkout. Orders are saved in this demo browser only.</p>
+    <div class="cart-page-actions"><a class="button button-orange" href="checkout.html">PROCEED TO CHECKOUT <span>↗</span></a><a class="button button-dark" href="index.html#new-arrivals">CONTINUE SHOPPING <span>↗</span></a></div>
   </main>
   <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">B</span> BLACK<span>FIRE</span></a><p>Wear what sets you apart.</p></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>

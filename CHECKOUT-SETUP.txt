@@ -1,0 +1,15 @@
+BLACK FIRE checkout demo setup
+
+Features added:
+- Wishlist page: wishlist.html reads products saved from product cards and persists them in localStorage.
+- Three-step checkout: Sign Up / Address / Payment.
+- Payment choices: UPI QR and Cash on Delivery only.
+- Orange accent color and white backgrounds.
+- Cart page links to checkout.html.
+
+IMPORTANT BEFORE REAL USE:
+1. UPI QR is a visual placeholder, not a real payment QR. Add your own official QR image as images/upi-qr.png and update checkout.html to display it. Do not use the decorative CSS placeholder to accept payments.
+2. Orders are stored only in this browser's localStorage. They are NOT sent to the store or an order-management system.
+3. UPI payment is not verified. Confirm payment in your bank/UPI app before dispatching.
+4. Connect a secure backend/order service before using checkout with real customers.
+5. This is a static frontend demo; no passwords are collected or accounts created.

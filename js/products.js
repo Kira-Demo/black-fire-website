@@ -5,6 +5,7 @@ window.BLACK_FIRE_PRODUCTS = [
       subtitle: "Black • Graphic T-shirt",
       image: "images/Inferno-tee.jpg",
       price: 500,
+      originalPrice: 800,
       tag: "BESTSELLER"
     },
     {
@@ -13,14 +14,16 @@ window.BLACK_FIRE_PRODUCTS = [
       subtitle: "Black • Printed hoodie",
       image: "images/blaze-hoodie.jpg",
       price: 500,
+      originalPrice: 800,
       tag: "NEW DROP"
     },
     {
       id: "ash-joggers",
       name: "Ash Relaxed Joggers",
       subtitle: "Grey • Relaxed fit",
-      image: "images/ash-joggers.jpg",
+      image: "images/joggers.jpg",
       price: 500,
+      originalPrice: 800,
       tag: "EVERYDAY FIT"
     },
     {
@@ -29,6 +32,7 @@ window.BLACK_FIRE_PRODUCTS = [
       subtitle: "Olive • Cargo trousers",
       image: "images/ember-cargos.jpg",
       price: 500,
+      originalPrice: 800,
       tag: "TRENDING"
     }
   ];

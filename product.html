@@ -1,23 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product | Black Fire</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore BLACK FIRE streetwear product details, sizes and delivery information.">
+  <title>Shop Product — BLACK FIRE</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
-<body>
-    <header>
-        <button class="hamburger" id="hamburger">☰</button>
-        <a href="index.html" class="logo">Black Fire</a>
-        <a href="cart.html" class="cart-icon">🛒 <span class="cart-count">0</span></a>
-    </header>
-
-    <div class="container product-detail-layout" id="product-detail">
-        <!-- Injected via JS based on URL ID -->
+<body class="product-page-body">
+  <div class="announcement">🔥 BLACK FIRE DROP — EVERY STYLE JUST ₹500</div>
+  <header class="site-header product-site-header">
+    <a class="brand" href="index.html" aria-label="BLACK FIRE home"><span class="brand-mark">B</span> BLACK<span>FIRE</span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="index.html#new-arrivals">SHOP ALL</a><a href="about.html">ABOUT</a></nav>
+    <div class="header-actions" aria-label="Account and shopping actions">
+      <a class="header-icon-button" id="wishlist-button" href="wishlist.html" aria-label="Wishlist" title="Wishlist">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.8a5.4 5.4 0 0 0-7.6 0L12 6l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6L12 21l8.8-8.6a5.4 5.4 0 0 0 0-7.6Z"/></svg>
+      </a>
+      <a class="header-icon-button header-cart-button" href="cart.html" aria-label="Shopping bag" title="Shopping bag">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 12.1a2 2 0 0 0 2 1.7h9.7a2 2 0 0 0 2-1.6L22 8H6"/><path d="M9 21h.01M18 21h.01"/></svg>
+        <span class="header-count" id="cart-count">0</span>
+      </a>
+      <a class="header-icon-button" id="login-link" href="checkout.html" aria-label="Account / Checkout" title="Account / Checkout">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7.5" r="3.5"/><path d="M4.5 21v-2.2a6 6 0 0 1 6-6h3a6 6 0 0 1 6 6V21Z"/></svg>
+      </a>
     </div>
-
-    <script src="js/products.js"></script>
-    <script src="js/main.js"></script>
+  </header>
+  <main class="product-detail-page" id="product-detail">
+    <div class="product-loading">Loading product…</div>
+  </main>
+  <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">B</span> BLACK<span>FIRE</span></a><p>Wear what sets you apart.</p><span>© <span id="year"></span> Black Fire. All rights reserved.</span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
